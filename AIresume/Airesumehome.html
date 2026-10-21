@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Resume Builder</title>
+  <link rel="airesume" href="airesume.css">
+</head>
+<body>
+  <header>
+    <h1>AI Resume Builder</h1>
+    <p>Automatically optimized CVs + LinkedIn suggestions</p>
+  </header>
+
+  <div class="container">
+    <h2>Enter Your Details</h2>
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="text" id="email" placeholder="Email">
+    <input type="text" id="skills" placeholder="Skills (comma separated)">
+    <textarea id="experience" placeholder="Work Experience"></textarea>
+    <textarea id="education" placeholder="Education"></textarea>
+    
+    <div class="buttons">
+      <button onclick="generateResume()">Generate Resume</button>
+      <button class="reset-btn" onclick="resetForm()">Reset</button>
+    </div>
+
+    <div class="resume-output" id="resumeOutput"></div>
+  </div>
+
+  <script>
+    function generateResume() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const skills = document.getElementById("skills").value;
+      const experience = document.getElementById("experience").value;
+      const education = document.getElementById("education").value;
+
+      const optimizedSkills = skills.split(",").map(s => s.trim()).join(" • ");
+      const resume = `
+        <h3>${name}</h3>
+        <p>Email: ${email}</p>
+        <h4>Skills</h4>
+        <p>${optimizedSkills}</p>
+        <h4>Experience</h4>
+        <p>${experience}</p>
+        <h4>Education</h4>
+        <p>${education}</p>
+        <h4>LinkedIn Suggestions</h4>
+        <p>Consider adding a professional summary and highlighting key achievements in your LinkedIn profile.</p>
+      `;
+      document.getElementById("resumeOutput").innerHTML = resume;
+    }
+
+    function resetForm() {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("skills").value = "";
+      document.getElementById("experience").value = "";
+      document.getElementById("education").value = "";
+      document.getElementById("resumeOutput").innerHTML = "";
+    }
+  </script>
+</body>
+</html>

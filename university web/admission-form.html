@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply Now - Invertis University</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="./invertislogo.jpg " alt="invertislogo">
+      </a>
+      <h1>Invertis University</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="departments.html">Departments</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Apply Section -->
+  <section class="apply">
+    <h2>Apply Now</h2>
+    <p>Start your journey with Invertis University. Complete the application form below to begin the admission process.</p>
+
+    <form action="#" method="post" class="apply-form">
+      <!-- Personal Info -->
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="dob">Date of Birth *</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone *</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <!-- Academic Info -->
+      <label for="program">Program Applying For *</label>
+      <select id="program" name="program" required>
+        <option value="">-- Select Program --</option>
+        <option>B.Tech (Computer Science)</option>
+        <option>MBA</option>
+        <option>B.Sc</option>
+        <option>BA</option>
+        <option>Ph.D</option>
+      </select>
+
+      <label for="marks">12th Percentage *</label>
+      <input type="number" id="marks" name="marks" min="0" max="100" required>
+
+      <!-- Documents -->
+      <label for="documents">Upload Documents (Marksheet, ID Proof, Photo) *</label>
+      <input type="file" id="documents" name="documents" multiple required>
+
+      <!-- Declaration -->
+      <label>
+        <input type="checkbox" required> I confirm that the information provided is accurate.
+      </label>
+
+      <!-- Submit -->
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Invertis University | Bareilly, Uttar Pradesh</p>
+  </footer>
+</body>
+</html>

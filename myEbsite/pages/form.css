@@ -1,0 +1,25 @@
+h1{
+    color:white;
+    background-color: black;
+    font-family: arial;
+
+}
+p{
+    color:yellow;
+    font-size: 50px;
+}
+BODY{
+  background-image: url('./invertispic.jpg') ;
+}
+*{
+    border: 2px solid black;
+}
+h2{
+    color: white;
+    background-color: red;
+    font-family: cursive;
+}
+p{
+    color: red;
+    background-image: url('./invertispic.jpg');
+}

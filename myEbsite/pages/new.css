@@ -1,0 +1,81 @@
+/* General font setup */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+    padding: 2rem;
+}
+
+/* Label styling */
+.label {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #888;
+}
+
+/* Main heading */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+/* Intro paragraph */
+.intro {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Subheading */
+h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #444;
+}
+
+/* Body text */
+.body-text {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+/* Quote styling */
+.quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    border-left: 4px solid #555;
+    padding-left: 1rem;
+    color: #666;
+    margin: 1.5rem 0;
+}
+
+/* Links */
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: 500;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background: #005fa3;
+}

@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.resume {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #666;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+p {
+  margin: 5px 0;
+}
